@@ -1,6 +1,18 @@
 **Dataset:** https://drive.google.com/drive/folders/11GY5JZ4F_h40qsO_PdEAnNisnI-RtSd0?usp=sharing
+1. Soap opera tests used for the formative study and automated soap opera testing.
+2. Bug reports for Firefox used to construct the scenario knowledge graph.
+3. Issues and pull requests for WordPress used to construct the scenario knowledge graph.
+4. Issues and pull requests for AntennaPod used to construct the scenario knowledge graph.
 
-**Firefox Formative Study**
+**Code:**
+1. Use scripts/0_0 to 0_3 to crawl bug reports from Mozilla Bugzilla.
+2. Use scripts/1_1 to 1_3 to crawl issues and pull requests from GitHub.
+3. Use scripts/2_1 to 2_8 to construct the scenario knowledge graph.
+4. Set up a virtual Android device or connect a physical Android device to your computer.
+5. Ensure the application under test is installed on the Android device.
+6. Run scripts/app.py to execute the multi-agent system for automated soap opera testing.
+
+**Bugs Identified in: Firefox Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -32,7 +44,7 @@
 | 26 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913605 | 
 | 27 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913606 | 
 
-**WordPress Formative Study**
+**Bugs Identified in: WordPress Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -51,7 +63,7 @@
 | 13 | https://github.com/wordpress-mobile/WordPress-Android/issues/21181 |
 | 14 | https://github.com/wordpress-mobile/WordPress-Android/issues/21188 |
 
-**AntennaPod Formative Study**
+**Bugs Identified in: AntennaPod Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -72,7 +84,7 @@
 | 15 | https://github.com/AntennaPod/AntennaPod/issues/7371 |
 | 16 | https://github.com/AntennaPod/AntennaPod/issues/7373 |
 
-**Firefox Automated Soap Opera Testing**
+**Bugs Identified in: Firefox Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -92,7 +104,7 @@
 | 14 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913414 |
 | 15 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913601 |
 
-**WordPress Automated Soap Opera Testing**
+**Bugs Identified in: WordPress Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -106,7 +118,7 @@
 | 8 | https://github.com/wordpress-mobile/WordPress-Android/issues/21190 |
 | 9 | https://github.com/wordpress-mobile/WordPress-Android/issues/21192 |
 
-**AntennaPod Automated Soap Opera Testing**
+**Bugs Identified in: AntennaPod Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -121,7 +133,7 @@
 | 9 | https://github.com/AntennaPod/AntennaPod/issues/7369 |
 | 10 | https://github.com/AntennaPod/AntennaPod/issues/7372 |
 
-**Human-AI Co-learning**
+**Bugs Identified in: Human-AI Co-learning**
 
 | No. | Bug ID |
 |----------|----------|
@@ -142,7 +154,7 @@
 | 15 | https://github.com/AntennaPod/AntennaPod/issues/7354 |
 | 16 | https://github.com/AntennaPod/AntennaPod/issues/7356 |
 
-**Others**
+**Bugs Identified in: Others**
 
 | No. | Bug ID |
 |----------|----------|
