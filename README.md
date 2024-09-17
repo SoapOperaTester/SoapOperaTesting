@@ -115,11 +115,11 @@
 | 3 | https://github.com/AntennaPod/AntennaPod/issues/7353 |
 | 4 | https://github.com/AntennaPod/AntennaPod/issues/7349 |
 | 5 | https://github.com/AntennaPod/AntennaPod/issues/7376 |
-| 7 | https://github.com/AntennaPod/AntennaPod/issues/7364 |
-| 8 | https://github.com/AntennaPod/AntennaPod/issues/7365 |
-| 9 | https://github.com/AntennaPod/AntennaPod/issues/7366 |
-| 10 | https://github.com/AntennaPod/AntennaPod/issues/7369 |
-| 11 | https://github.com/AntennaPod/AntennaPod/issues/7372 |
+| 6 | https://github.com/AntennaPod/AntennaPod/issues/7364 |
+| 7 | https://github.com/AntennaPod/AntennaPod/issues/7365 |
+| 8 | https://github.com/AntennaPod/AntennaPod/issues/7366 |
+| 9 | https://github.com/AntennaPod/AntennaPod/issues/7369 |
+| 10 | https://github.com/AntennaPod/AntennaPod/issues/7372 |
 
 **Human-AI Co-learning**
 
