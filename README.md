@@ -86,6 +86,10 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 **Round 1-14**
 ![Round 1-14](example_2/example2.png)
 
+Soap opera testing is a scenario-based exploratory testing (ET) designed to uncover unexpected behaviors through complex workflows and dramatic interactions.  
+In this example, the bug identified in the final pink box is triggered only after executing a sequence of intricate steps.   
+The complexity of these operations and interactions makes it difficult for testers or traditional testing techniques to envision this scenario from the outset.
+
 **This example highlights the challenges of automating soap opera testing:**
 
 1. **Automated Execution Challenge**:  
@@ -95,6 +99,7 @@ The Planner’s ability to detect deviations and dynamically adjust the plan (sh
 2. **Bug Detection Challenge**:  
 Bug detection requires understanding of GUI states. 
 The Detector, with this capability, can reliably identify unexpected bugs (shown in the pink box).
+
 
 ### **Bugs Identified in: Firefox Formative Study**
 
