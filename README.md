@@ -86,7 +86,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 **Round 1-14**
 ![Round 1-14](example_2/example2.png)
 
-**This example highlights the challenges of automating soap opera testing and how our approach addresses them:**
+**This example highlights the challenges of automating soap opera testing:**
 
 1. **Automated Execution Challenge**:  
 Soap opera tests involve long and intricate UI operations, making automation difficult. 
