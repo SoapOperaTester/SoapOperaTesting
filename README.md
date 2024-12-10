@@ -48,11 +48,10 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 ![Round 7-11](example_1/round7-11.png)
 
 - The Planner generates an actionable plan to reopen the closed tab by selecting the Three-dot menu.  
-- The Player, however, incorrectly taps the 'Share' icon instead.  
-- Recognizing this error, the Planner adjusts the plan to cancel the action by clicking the 'X' button.  
+- The Player, however, unexpectedly taps the 'Share' icon instead.  
+- Recognizing this deviation, the Planner adjusts the plan to cancel the action by clicking the 'X' button.  
 - This reveals a bug (Figure 3): the 'Back' icon turns black (making it hard to see), and the title reverts to 'Recently Closed Tabs' while still displaying the selected websites after canceling the share action.  
 - The Planner resumes the intended steps and continues executing the plan until the soap opera test is successfully completed.
-
 
 **From this example, the following insights can be observed:**
 
@@ -70,7 +69,10 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 
 5. **Continuous Bug Detection**:  
    The Detector performs bug detection after each UI operation, identifying bugs during test execution (e.g., round 2) and upon test completion. By leveraging GUI state understanding and oracle knowledge from the SKG (e.g., round 2, round 6), the Detector can detect various bug types beyond just crashes.
-   
+
+
+
+
 
 ### **Bugs Identified in: Firefox Formative Study**
 
