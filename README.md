@@ -15,7 +15,7 @@
 ### **Approach Overview of Automated Soap Opera Testing**
 ![Overview](example_1/framework.png)
 
-### **Example by Automated Soap Opera Testing**
+### **Example 1 by Automated Soap Opera Testing**
 
 #### **Soap Opera Test**
 
@@ -70,9 +70,31 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 5. **Continuous Bug Detection**:  
    The Detector performs bug detection after each UI operation, identifying bugs during test execution (e.g., round 2) and upon test completion. By leveraging GUI state understanding and oracle knowledge from the SKG (e.g., round 2, round 6), the Detector can detect various bug types beyond just crashes.
 
+### **Example 2 by Automated Soap Opera Testing**
 
+#### **Soap Opera Test**
 
+**STEP 0**: Go to Subscriptions  
+**STEP 1**: Click on the podcast to view the subscription episodes list  
+**STEP 2**: Click on the menu icon  
+**STEP 3**: Select 'Remove podcast'  
+**STEP 4**: Confirm deletion  
+**STEP 5**: Go to the player screen  
+**STEP 6**: Click on the menu  
+**STEP 7**: Select 'Open Podcast'
 
+**Round 1-14**
+![Round 1-14](example_2/example2.png)
+
+**This example highlights the challenges of automating soap opera testing and how our approach addresses them:**
+
+1. **Automated Execution Challenge**:  
+Soap opera tests involve long and intricate UI operations, making automation difficult. 
+The Planner’s ability to detect deviations and dynamically adjust the plan (shown in the purple box) significantly increases the likelihood of successful test execution.
+
+2. **Bug Detection Challenge**:  
+Bug detection requires an understanding of GUI states. 
+The Detector, with this capability, can reliably identify unexpected bugs (shown in the pink box).
 
 ### **Bugs Identified in: Firefox Formative Study**
 
