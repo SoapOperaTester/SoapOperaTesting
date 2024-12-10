@@ -23,8 +23,6 @@
 **STEP 1**: Open recently closed tabs  
 **STEP 2**: Select a tab to reopen  
 
-
-
 **Round 1**
 ![Round 1](example_1/round1.png)
 
@@ -49,14 +47,32 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 **Round 7-11**
 ![Round 7-11](example_1/round7-11.png)
 
-- The Planner generates an actionable plan to reopen the closed tab by clicking the Three-dot menu.
-- However, the Player incorrectly locates and taps the 'Share' icon instead. 
-- Recognizing the erroneous UI operation, the Planner adjusts the plan to click the 'X' button to cancel the action. 
-- This reveals a bug (Figure 3): the 'Back' icon turns black, and the title reverts to 'Recently Closed Tabs' while still displaying the selected websites after canceling the share action on the 'Recently Closed Tabs' page.
-- The Planner resumes the intended steps after correcting the erroneous operation and continues executing the actionable plan until the soap opera test is successfully completed. 
+- The Planner generates an actionable plan to reopen the closed tab by selecting the Three-dot menu.  
+- The Player, however, incorrectly taps the 'Share' icon instead.  
+- Recognizing this error, the Planner adjusts the plan to cancel the action by clicking the 'X' button.  
+- This reveals a bug (Figure 3): the 'Back' icon turns black (making it hard to see), and the title reverts to 'Recently Closed Tabs' while still displaying the selected websites after canceling the share action.  
+- The Planner resumes the intended steps and continues executing the plan until the soap opera test is successfully completed.
 
 
-**Bugs Identified in: Firefox Formative Study**
+**From this example, the following insights can be observed:**
+
+1. **Actionable Plan Generation**:  
+   A single step in the soap opera test often requires executing multiple UI instructions. The Planner generates actionable plans based on the current GUI state and step knowledge from the SKG (e.g., round 1, round 4), increasing the likelihood of successfully completing the test.
+
+2. **Adaptive Planning**:  
+   The Planner dynamically adjusts plans based on the GUI state (e.g., round 3). When execution deviates from the intended path, the Planner can correct the deviation and resume the mainline execution (e.g., round 7-11), ensuring the test is completed.
+
+3. **Non-Intrusive UI Operation Execution**:  
+   The Player locates UI elements using grid numbers, a non-intrusive method that enhances the adaptability and generalizability of our approach across different applications.
+
+4. **Exploration Beyond Test**:  
+   Deviations from the main test path can lead to unexpected discoveries. Similar to role-playing games where side quests emerge alongside the main quest, these deviations can reveal hidden bugs (e.g., round 7-9), inspiring further investigation and uncovering additional related issues.
+
+5. **Continuous Bug Detection**:  
+   The Detector performs bug detection after each UI operation, identifying bugs during test execution (e.g., round 2) and upon test completion. By leveraging GUI state understanding and oracle knowledge from the SKG (e.g., round 2, round 6), the Detector can detect various bug types beyond just crashes.
+   
+
+### **Bugs Identified in: Firefox Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -88,7 +104,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 26 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913605 | 
 | 27 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913606 | 
 
-**Bugs Identified in: WordPress Formative Study**
+### **Bugs Identified in: WordPress Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -107,7 +123,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 13 | https://github.com/wordpress-mobile/WordPress-Android/issues/21181 |
 | 14 | https://github.com/wordpress-mobile/WordPress-Android/issues/21188 |
 
-**Bugs Identified in: AntennaPod Formative Study**
+### **Bugs Identified in: AntennaPod Formative Study**
 
 | No. | Bug ID |
 |----------|----------|
@@ -128,7 +144,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 15 | https://github.com/AntennaPod/AntennaPod/issues/7371 |
 | 16 | https://github.com/AntennaPod/AntennaPod/issues/7373 |
 
-**Bugs Identified in: Firefox Automated Soap Opera Testing**
+### **Bugs Identified in: Firefox Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -148,7 +164,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 14 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913414 |
 | 15 | https://bugzilla.mozilla.org/show_bug.cgi?id=1913601 |
 
-**Bugs Identified in: WordPress Automated Soap Opera Testing**
+### **Bugs Identified in: WordPress Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -162,7 +178,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 8 | https://github.com/wordpress-mobile/WordPress-Android/issues/21190 |
 | 9 | https://github.com/wordpress-mobile/WordPress-Android/issues/21192 |
 
-**Bugs Identified in: AntennaPod Automated Soap Opera Testing**
+### **Bugs Identified in: AntennaPod Automated Soap Opera Testing**
 
 | No. | Bug ID |
 |----------|----------|
@@ -177,7 +193,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 9 | https://github.com/AntennaPod/AntennaPod/issues/7369 |
 | 10 | https://github.com/AntennaPod/AntennaPod/issues/7372 |
 
-**Bugs Identified in: Human-AI Co-learning**
+### **Bugs Identified in: Human-AI Co-learning**
 
 | No. | Bug ID |
 |----------|----------|
@@ -198,7 +214,7 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 | 15 | https://github.com/AntennaPod/AntennaPod/issues/7354 |
 | 16 | https://github.com/AntennaPod/AntennaPod/issues/7356 |
 
-**Bugs Identified in: Others**
+### **Bugs Identified in: Others**
 
 | No. | Bug ID |
 |----------|----------|
