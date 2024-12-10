@@ -15,7 +15,7 @@
 ### **Approach Overview of Automated Soap Opera Testing**
 ![Overview](example_1/framework.png)
 
-### **Example 1 by Automated Soap Opera Testing**
+### **Example by Automated Soap Opera Testing**
 
 #### **Soap Opera Test**
 
