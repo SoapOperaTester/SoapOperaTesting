@@ -93,7 +93,7 @@ Soap opera tests involve long and intricate UI operations, making automation dif
 The Planner’s ability to detect deviations and dynamically adjust the plan (shown in the purple box) significantly increases the likelihood of successful test execution.
 
 2. **Bug Detection Challenge**:  
-Bug detection requires an understanding of GUI states. 
+Bug detection requires understanding of GUI states. 
 The Detector, with this capability, can reliably identify unexpected bugs (shown in the pink box).
 
 ### **Bugs Identified in: Firefox Formative Study**
