@@ -12,6 +12,50 @@
 5. Ensure the application under test is installed on the Android device.
 6. Run scripts/app.py to execute the multi-agent system for automated soap opera testing.
 
+### **Approach Overview of Automated Soap Opera Testing**
+![Overview](example_1/framework.png)
+
+### **Example 1 by Automated Soap Opera Testing**
+
+#### **Soap Opera Test**
+
+**STEP 0**: Close a tab  
+**STEP 1**: Open recently closed tabs  
+**STEP 2**: Select a tab to reopen  
+
+
+
+**Round 1**
+![Round 1](example_1/round1.png)
+
+**Round 2**
+![Round 2](example_1/round2.png)
+The Detector identifies a bug based on the GUI status and oracle knowledge from SKG.
+
+**Round 3**
+![Round 3](example_1/round3.png)
+The Planner generates an actionable plan to use the 'UNDO' feature, allowing for easy reopening of the closed tab based on the current GUI status.
+
+**Round 4**
+![Round 4](example_1/round4.png)
+The Planner generates an actionable plan to open the 'Recently Closed Tabs' page by leveraging the current GUI status and step knowledge from the SKG.
+
+**Round 5**
+![Round 5](example_1/round5.png)
+
+**Round 6**
+![Round 6](example_1/round6.png)
+
+**Round 7-11**
+![Round 7-11](example_1/round7-11.png)
+
+- The Planner generates an actionable plan to reopen the closed tab by clicking the Three-dot menu.
+- However, the Player incorrectly locates and taps the 'Share' icon instead. 
+- Recognizing the erroneous UI operation, the Planner adjusts the plan to click the 'X' button to cancel the action. 
+- This reveals a bug (Figure 3): the 'Back' icon turns black, and the title reverts to 'Recently Closed Tabs' while still displaying the selected websites after canceling the share action on the 'Recently Closed Tabs' page.
+- The Planner resumes the intended steps after correcting the erroneous operation and continues executing the actionable plan until the soap opera test is successfully completed. 
+
+
 **Bugs Identified in: Firefox Formative Study**
 
 | No. | Bug ID |
