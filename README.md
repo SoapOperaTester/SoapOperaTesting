@@ -31,7 +31,7 @@
 **Round 1-14**
 ![Round 1-14](example_1/round1-14.png)
 
-Soap opera testing is a scenario-based exploratory testing (ET) approach designed to uncover unexpected behaviors through complex workflows and dramatic interactions.  
+Soap opera testing is a scenario-based exploratory testing (ET) approach designed to uncover unexpected behaviors through complex workflows and dramatic interactions. 
 Soap opera tests (test scenarios) typically involve realistic yet condensed system usage scenarios, which effectively reveal hidden and unexpected bugs. 
 Without such soap opera tests as guidance, it is challenging for testers or traditional testing techniques to randomly generate and explore such intricate and dramatic workflows from scratch, making it difficult to identify these hidden issues.
 
