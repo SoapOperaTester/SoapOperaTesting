@@ -31,12 +31,18 @@
 **Round 1-14**
 ![Round 1-14](example_1/round1-14.png)
 
-Soap opera testing is a scenario-based exploratory testing (ET) approach designed to uncover unexpected behaviors through complex workflows and dramatic interactions. 
+Soap opera testing is a scenario-based exploratory testing (ET) approach designed to uncover unexpected behaviors through complex workflows and dramatic interactions.  
+Soap opera tests (test scenarios) typically involve realistic yet condensed system usage scenarios, which effectively reveal hidden and unexpected bugs. 
+Without such soap opera tests as guidance, it is challenging for testers or traditional testing techniques to randomly generate and explore such intricate and dramatic workflows from scratch, making it difficult to identify these hidden issues.
+
 In this example, the soap opera test involves removing a subscribed podcast and then attempting to open it on the player screen. 
-This test spans multiple features (e.g., removing and opening a podcast) and different pages (e.g., Subscriptions and Player Screen), reflecting realistic yet condensed system usage scenarios. 
-The test's exaggerated and dramatic interactions are crafted to reveal complex and hidden problems.
-The bug identified in the final pink box is triggered only after executing a sequence of intricate steps. 
-Due to the complexity of these operations and interactions, it is difficult for testers or traditional testing techniques to conceive or trigger this scenario from scratch.
+This test spans different features (e.g., removing and opening a podcast) and multiple pages (e.g., Subscriptions and Player Screen), reflecting realistic yet condensed system usage scenarios. 
+The exaggerated interactions in this test reveal a hidden issue: an infinitely spinning loader, as shown in the final pink box.
+This bug only occurs after performing a sequence of intricate steps. 
+Because the scenario involves multiple features and pages, it is challenging for testers or traditional testing techniques to generate and explore such a dramatic scenario from scratch. 
+Moreover, identifying this non-crash bug requires an understanding of the GUI state, adding another layer of difficulty for conventional detection methods.
+
+
 
 **This example highlights the challenges of automating soap opera testing:**
 
