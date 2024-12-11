@@ -19,33 +19,63 @@
 
 #### **Soap Opera Test**
 
+**STEP 0**: Go to Subscriptions  
+**STEP 1**: Click on the podcast to view the subscription episodes list  
+**STEP 2**: Click on the menu icon  
+**STEP 3**: Select 'Remove podcast'  
+**STEP 4**: Confirm deletion  
+**STEP 5**: Go to the player screen  
+**STEP 6**: Click on the menu  
+**STEP 7**: Select 'Open Podcast'
+
+**Round 1-14**
+![Round 1-14](example_1/round1-14.png)
+
+Soap opera testing is a scenario-based exploratory testing (ET) designed to uncover unexpected behaviors through complex workflows and dramatic interactions.  
+In this example, the bug identified in the final pink box is triggered only after executing a sequence of intricate steps.   
+The complexity of these operations and interactions makes it difficult for testers or traditional testing techniques to envision this scenario from the outset.
+
+**This example highlights the challenges of automating soap opera testing:**
+
+1. **Automated Execution Challenge**:  
+Soap opera tests involve long and intricate UI operations, making automation difficult. 
+The Planner’s ability to detect deviations and dynamically adjust the plan (shown in the purple box) significantly increases the likelihood of successful test execution.
+
+2. **Bug Detection Challenge**:  
+Effective bug detection requires understanding the executed UI instructions (via NLU) and recognizing the resulting UI changes (via image recognition). 
+With these capabilities, the Detector can reliably identify unexpected bugs (shown in the pink box).
+
+### **Example 2 by Automated Soap Opera Testing**
+
+#### **Soap Opera Test**
+
 **STEP 0**: Close a tab  
 **STEP 1**: Open recently closed tabs  
 **STEP 2**: Select a tab to reopen  
 
 **Round 1**
-![Round 1](example_1/round1.png)
+![Round 1](example_2/round1.png)
 
 **Round 2**
-![Round 2](example_1/round2.png)
+![Round 2](example_2/round2.png)
 The Detector identifies a bug based on the GUI status and oracle knowledge from SKG.
 
 **Round 3**
-![Round 3](example_1/round3.png)
+![Round 3](example_2/round3.png)
 The Planner generates an actionable plan to use the 'UNDO' feature, allowing for easy reopening of the closed tab based on the current GUI status.
 
 **Round 4**
-![Round 4](example_1/round4.png)
+![Round 4](example_2/round4.png)
 The Planner generates an actionable plan to open the 'Recently Closed Tabs' page by leveraging the current GUI status and step knowledge from the SKG.
 
 **Round 5**
-![Round 5](example_1/round5.png)
+![Round 5](example_2/round5.png)
 
 **Round 6**
-![Round 6](example_1/round6.png)
+![Round 6](example_2/round6.png)
 
 **Round 7-11**
-![Round 7-11](example_1/round7-11.png)
+![Round 7-11](example_2/round7-11.png)
 
 - The Planner generates an actionable plan to reopen the closed tab by selecting the Three-dot menu.  
 - The Player, however, unexpectedly taps the 'Share' icon instead.  
@@ -70,35 +100,6 @@ The Planner generates an actionable plan to open the 'Recently Closed Tabs' page
 5. **Continuous Bug Detection**:  
    The Detector performs bug detection after each UI operation, identifying bugs during test execution (e.g., round 2) and upon test completion. By leveraging GUI state understanding and oracle knowledge from the SKG (e.g., round 2, round 6), the Detector can detect various bug types beyond just crashes.
 
-### **Example 2 by Automated Soap Opera Testing**
-
-#### **Soap Opera Test**
-
-**STEP 0**: Go to Subscriptions  
-**STEP 1**: Click on the podcast to view the subscription episodes list  
-**STEP 2**: Click on the menu icon  
-**STEP 3**: Select 'Remove podcast'  
-**STEP 4**: Confirm deletion  
-**STEP 5**: Go to the player screen  
-**STEP 6**: Click on the menu  
-**STEP 7**: Select 'Open Podcast'
-
-**Round 1-14**
-![Round 1-14](example_2/example2.png)
-
-Soap opera testing is a scenario-based exploratory testing (ET) designed to uncover unexpected behaviors through complex workflows and dramatic interactions.  
-In this example, the bug identified in the final pink box is triggered only after executing a sequence of intricate steps.   
-The complexity of these operations and interactions makes it difficult for testers or traditional testing techniques to envision this scenario from the outset.
-
-**This example highlights the challenges of automating soap opera testing:**
-
-1. **Automated Execution Challenge**:  
-Soap opera tests involve long and intricate UI operations, making automation difficult. 
-The Planner’s ability to detect deviations and dynamically adjust the plan (shown in the purple box) significantly increases the likelihood of successful test execution.
-
-2. **Bug Detection Challenge**:  
-Bug detection requires understanding of GUI states. 
-The Detector, with this capability, can reliably identify unexpected bugs (shown in the pink box).
 
 
 ### **Bugs Identified in: Firefox Formative Study**
